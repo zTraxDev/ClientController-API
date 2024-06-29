@@ -41,3 +41,4 @@
 2024-06-29 20:15:15 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
 2024-06-29 20:15:17 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
 2024-06-29 21:36:27 [[31merror[39m]: [31mHubo un error al eliminar todos los usuarios: TypeError: Cannot read properties of undefined (reading 'status')[39m
+2024-06-29 22:57:37 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds[39m

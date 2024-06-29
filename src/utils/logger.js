@@ -23,6 +23,15 @@ const logger = winston.createLogger({
       ),
     }),
     new winston.transports.DailyRotateFile({
+      filename: 'logs/%DATE%-info.log', // Archivo para logs de nivel 'info'
+      datePattern: 'YYYY-MM-DD',
+      level: 'info',
+      format: combine(
+        timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+        customFormat
+      ),
+    }),
+    new winston.transports.DailyRotateFile({
       filename: 'logs/%DATE%-error.log',
       datePattern: 'YYYY-MM-DD',
       level: 'error',

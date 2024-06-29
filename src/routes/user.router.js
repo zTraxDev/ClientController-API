@@ -11,5 +11,10 @@ userRouter.get("/:id", UserService.getUserById)
 
 // Posts and Patch
 userRouter.post("/create", userValidator, UserService.createUser)
+userRouter.post("/login", UserService.logginUser)
+
+
+// Delte
+userRouter.delete("/:id", UserService.deleteUserById)
 
 export { userRouter }

@@ -79,7 +79,7 @@ class UserServices {
                 return res.status(HttpCode.NOT_FOUND).json({ error: 'Usuario no encontrado' });
             }
 
-            logger.info(`Usuario con nombre de usuario ${username} obtenido`);
+            logger.info(`Se buscaron datos del usuario: [Nombre] | ${finduser.username} | [ID] | ${finduser._id}`);
             return res.status(HttpCode.OK).json({ data: {id: finduser._id, user: finduser } });
         } catch (e) {
             logger.error(`Hubo un error al buscar el usuario: ${e.message}`);
@@ -140,6 +140,34 @@ class UserServices {
     async logginUser(req, res){
         const { user, password } = matchedData(req)
         const findInfoUser = await User.findOne({ username: user, password: password})
+
+        if(!findInfoUser){
+            return res.json({
+                data: {
+                    message: "Usuario o contraseña incorrectos"
+                },
+                status_code: HttpCode.BAD_REQUEST
+            })
+        }
+
+        const comparePass = await comparePassword(password, findInfoUser.password)
+
+        if(!comparePass){
+            return res.json({
+                data: {
+                    message: "Usuario o contraseña incorrectos"
+                },
+                status_code: HttpCode.BAD_REQUEST
+            })
+        }
+
+        logger.info(`Se ha iniciado sesion con el usuario: ${findInfoUser.username}`)
+        return res.status(HttpCode.OK).json({
+            data: {
+                user: findInfoUser
+            },
+            status_code: HttpCode.OK
+        })
     }
 
     /**
@@ -162,7 +190,7 @@ class UserServices {
                 const deletedUser = await User.findByIdAndDelete(id);
     
                 if (!deletedUser) {
-                    logger.info(`Usuario con id ${id} no encontrado`);
+                    logger.info(`Un usuario ah sido eleminado: ${id}`);
                     return res.status(HttpCode.NOT_FOUND).json({ message: "Usuario no encontrado" });
                 }
     

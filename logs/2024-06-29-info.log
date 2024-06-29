@@ -1,0 +1,8 @@
+2024-06-29 22:05:19 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
+2024-06-29 22:07:10 [[32minfo[39m]: [32mSe buscaron datos del usuario: Nombre | jose | ID | 66806358552c6bab896999cb[39m
+2024-06-29 22:07:56 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | jose | [ID] | 66806358552c6bab896999cb[39m
+2024-06-29 22:10:15 [[32minfo[39m]: [32mUsuario con id 66806358552c6bab896999cb eliminado[39m
+2024-06-29 22:10:25 [[32minfo[39m]: [32mUsuario con nombre de usuario 66806358552c6bab896999cb no encontrado[39m
+2024-06-29 22:57:21 [[32minfo[39m]: [32mUsuario con nombre de usuario create no encontrado[39m
+2024-06-29 22:57:37 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: data must be a string or Buffer and salt must either be a salt string or a number of rounds[39m
+2024-06-29 22:57:48 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 6680754c676a1d09e176402f[39m
