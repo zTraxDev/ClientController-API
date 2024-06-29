@@ -1,0 +1,43 @@
+2024-06-29 07:26:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:27:07 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:27:29 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:28:33 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:17 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:35 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:30:16 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:30:18 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:31:00 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:32:35 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:32:37 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:34:03 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:34:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:35:37 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:35:44 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:36:11 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:36:13 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:41:10 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:41:53 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:42:47 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:53 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:56 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:56 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:57 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:57 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:58 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:59 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:43:17 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 19:22:37 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "bernardmartinez244@gmail.com" }[39m
+2024-06-29 19:26:25 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: ReferenceError: Cannot access 'email' before initialization[39m
+2024-06-29 19:27:23 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: TypeError: Cannot read properties of null (reading 'email')[39m
+2024-06-29 19:28:00 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: TypeError: Cannot read properties of null (reading 'email')[39m
+2024-06-29 20:08:52 [[31merror[39m]: [31mHubo un error al buscar el usuario: id is not defined[39m
+2024-06-29 20:09:11 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:11:00 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:12:49 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:12:50 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:13:07 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:14:05 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:15:15 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:15:17 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 21:36:27 [[31merror[39m]: [31mHubo un error al eliminar todos los usuarios: TypeError: Cannot read properties of undefined (reading 'status')[39m

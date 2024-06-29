@@ -1,0 +1,79 @@
+2024-06-29 07:26:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:27:07 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:27:29 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:28:33 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:17 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:29:35 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:30:16 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:30:18 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:31:00 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:32:35 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:32:37 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:34:03 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:34:26 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:35:37 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:35:44 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:36:11 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:36:13 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:41:10 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:41:53 [[31merror[39m]: [31mHubo un error al crear un usuario: [39m
+2024-06-29 07:42:47 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:53 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:56 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:56 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:57 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:57 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:58 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:42:59 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 07:43:17 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "maricones@chupapollas.com" }[39m
+2024-06-29 19:22:37 [[31merror[39m]: [31mHubo un error al crear un usuario: MongoServerError: E11000 duplicate key error collection: CRM-Clients.users index: email_1 dup key: { email: "bernardmartinez244@gmail.com" }[39m
+2024-06-29 19:26:25 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: ReferenceError: Cannot access 'email' before initialization[39m
+2024-06-29 19:27:23 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: TypeError: Cannot read properties of null (reading 'email')[39m
+2024-06-29 19:28:00 [[31merror[39m]: [31mHubo un error al crear un usuario: Error: TypeError: Cannot read properties of null (reading 'email')[39m
+2024-06-29 19:31:56 [[32minfo[39m]: [32mUsuario con id 6680445d38ee7ae69f7a1a3d obtenido[39m
+2024-06-29 19:33:38 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:34:40 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:37:44 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:40:03 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:41:00 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:41:41 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:43:15 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Adolft Hitler" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:45:21 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Adolft Hitler" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:45:47 [[32minfo[39m]: [32mUsuario con id 668042daecd4f54c12a808ea obtenido[39m
+2024-06-29 19:51:09 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:52:42 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:55:06 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:56:15 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 19:58:27 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:01:03 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value ""Bernardo"" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:01:10 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:01:50 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:04:59 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:06:07 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:06:17 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:06:19 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:06:43 [[32minfo[39m]: [32mUsuario con id 6680445338ee7ae69f7a1a39 obtenido[39m
+2024-06-29 20:06:49 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernardo" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:08:28 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "jose" (type string) at path "_id" for model "User"[39m
+2024-06-29 20:08:52 [[31merror[39m]: [31mHubo un error al buscar el usuario: id is not defined[39m
+2024-06-29 20:09:11 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:10:40 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
+2024-06-29 20:11:00 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:12:49 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:12:50 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:13:07 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:14:05 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:15:15 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:15:17 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cast to ObjectId failed for value "{ username: 'jose' }" (type Object) at path "_id" for model "User"[39m
+2024-06-29 20:16:06 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
+2024-06-29 20:16:39 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
+2024-06-29 21:36:27 [[32minfo[39m]: [32mSe eliminaron 17 usuarios[39m
+2024-06-29 21:52:40 [[32minfo[39m]: [32mSe eliminaron jose usuarios[39m
+2024-06-29 21:53:24 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 66806634577cb98f843d0456[39m
+2024-06-29 21:56:39 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 668066f6b8f8d6176f683bc8[39m
+2024-06-29 21:57:49 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernard" (type string) at path "_id" for model "User"[39m
+2024-06-29 21:57:56 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "jose" (type string) at path "_id" for model "User"[39m
+2024-06-29 21:58:40 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "jose" (type string) at path "_id" for model "User"[39m
+2024-06-29 22:00:13 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
+2024-06-29 22:01:15 [[32minfo[39m]: [32mUsuario con nombre de usuario jose obtenido[39m
