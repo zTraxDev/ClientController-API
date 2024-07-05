@@ -1,20 +1,22 @@
 import { Router } from "express"
-import { UserService } from "../services/user.services.js"
+import { UserController } from "../controllers/user.controller.js"
 import { userValidator } from "../validators/userValidator.js"
+import { loginValidator } from "../validators/login.validator.js"
+import { checkRoles } from "../middleware/role.middleware.js"
 
 const userRouter = Router()
 
 // Gets
-userRouter.get("/", UserService.getAllUser)
-userRouter.get("/:username", UserService.getUserByUsername)
-userRouter.get("/:id", UserService.getUserById)
+userRouter.get("/", UserController.getAllUser)
+userRouter.get("/:username", UserController.getUserByUsername)
+userRouter.get("/:id", UserController.getUserById)
 
 // Posts and Patch
-userRouter.post("/create", userValidator, UserService.createUser)
-userRouter.post("/login", UserService.logginUser)
+userRouter.post("/create", userValidator, UserController.createUser)
+userRouter.post("/login", loginValidator, UserController.logginUser)
 
 
 // Delte
-userRouter.delete("/:id", UserService.deleteUserById)
+userRouter.delete("/:id", UserController.deleteUserById)
 
 export { userRouter }

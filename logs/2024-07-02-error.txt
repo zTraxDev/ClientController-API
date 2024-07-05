@@ -1,0 +1,1 @@
+2024-07-02 01:56:26 [[31merror[39m]: [31mHubo un error al buscar el usuario: Cannot read properties of undefined (reading 'params')[39m

@@ -5,6 +5,7 @@ import { matchedData } from "express-validator";
 import { HttpCode } from "../helpers/HttpHelper.js";
 import { verifyEmail } from "../helpers/VerifyEmail.js";
 import { hashPassword, comparePassword } from "../helpers/crypt.js";
+import bcrypt from "bcrypt"
 
 /**
  * @class UserServices
@@ -20,7 +21,8 @@ class UserServices {
         try {
             const users = await User.find()
 
-            if(!users) return res.json({ message: "Lista de usuarios vacia"}).status(HttpCode.OK)
+            console.log(req.user)
+            if(!users) return res.json({succes: true,  message: "Lista de usuarios vacia", status_code: HttpCode.OK}).status(HttpCode.OK)
 
             return res.json({ data: users })
             logger.info(`Lista de usuarios obtenidas`)
@@ -137,37 +139,46 @@ class UserServices {
      * @param {res} res 
      */
 
-    async logginUser(req, res){
-        const { user, password } = matchedData(req)
-        const findInfoUser = await User.findOne({ username: user, password: password})
+    async logginUser(req, res) {
+        try {
+            const { username, password } = matchedData(req); // Asegúrate de que 'username' y 'password' sean los campos correctos
 
-        if(!findInfoUser){
-            return res.json({
+            logger.info(`Intento de inicio de sesión con usuario: ${username}`);
+
+            const findInfoUser = await User.findOne({ username });
+
+            if (!findInfoUser) {
+                logger.info(`Usuario con nombre de usuario ${username} no encontrado`);
+                return res.status(HttpCode.NOT_FOUND).json({
+                    error: 'Usuario o contraseña incorrectos',
+                    status_code: HttpCode.NOT_FOUND
+                });
+            }
+
+            const comparePass = await bcrypt.compare(password, findInfoUser.password);
+
+            if (!comparePass) {
+                return res.status(HttpCode.BAD_REQUEST).json({
+                    error: 'Usuario o contraseña incorrectos',
+                    status_code: HttpCode.BAD_REQUEST
+                });
+            }
+
+            logger.info(`Se ha iniciado sesión con el usuario: ${findInfoUser.username}`);
+            return res.status(HttpCode.OK).json({
+                succes: true,
                 data: {
-                    message: "Usuario o contraseña incorrectos"
+                    user: findInfoUser
                 },
-                status_code: HttpCode.BAD_REQUEST
-            })
+                status_code: HttpCode.OK
+            });
+        } catch (e) {
+            logger.error(`Hubo un error al intentar iniciar sesión: ${e.message}`);
+            return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({
+                error: e.message,
+                status_code: HttpCode.INTERNAL_SERVER_ERROR
+            });
         }
-
-        const comparePass = await comparePassword(password, findInfoUser.password)
-
-        if(!comparePass){
-            return res.json({
-                data: {
-                    message: "Usuario o contraseña incorrectos"
-                },
-                status_code: HttpCode.BAD_REQUEST
-            })
-        }
-
-        logger.info(`Se ha iniciado sesion con el usuario: ${findInfoUser.username}`)
-        return res.status(HttpCode.OK).json({
-            data: {
-                user: findInfoUser
-            },
-            status_code: HttpCode.OK
-        })
     }
 
     /**
@@ -217,6 +228,6 @@ class UserServices {
     }
 }
 
-const UserService = new UserServices()
+const UserController = new UserServices()
 
-export { UserService }
+export { UserController }

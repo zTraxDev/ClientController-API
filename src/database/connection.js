@@ -1,8 +1,9 @@
 import MongoDB from "mongoose"
+import { devMode } from "../../config.js"
 
 class Database {
     constructor() {
-        this.uri = process.env.URI
+        this.uri = devMode ? process.env.URI : process.env.DEV_URI
     }
 
     async connect(){

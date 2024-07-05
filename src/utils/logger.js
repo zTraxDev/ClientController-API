@@ -23,7 +23,7 @@ const logger = winston.createLogger({
       ),
     }),
     new winston.transports.DailyRotateFile({
-      filename: 'logs/%DATE%-info.log', // Archivo para logs de nivel 'info'
+      filename: 'logs/%DATE%-info.txt', // Archivo para logs de nivel 'info'
       datePattern: 'YYYY-MM-DD',
       level: 'info',
       format: combine(
@@ -32,7 +32,7 @@ const logger = winston.createLogger({
       ),
     }),
     new winston.transports.DailyRotateFile({
-      filename: 'logs/%DATE%-error.log',
+      filename: 'logs/%DATE%-error.txt',
       datePattern: 'YYYY-MM-DD',
       level: 'error',
       format: combine(
@@ -41,7 +41,7 @@ const logger = winston.createLogger({
       ),
     }),
     new winston.transports.DailyRotateFile({
-      filename: 'logs/%DATE%-combined.log',
+      filename: 'logs/%DATE%-combined.txt',
       datePattern: 'YYYY-MM-DD',
       format: combine(
         timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),

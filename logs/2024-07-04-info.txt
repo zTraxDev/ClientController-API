@@ -1,0 +1,25 @@
+2024-07-04 18:30:27 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'json')[39m
+2024-07-04 20:22:27 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'json')[39m
+2024-07-04 20:23:45 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'send')[39m
+2024-07-04 20:27:09 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-04 20:52:05 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 6686ef550f6b3b84e12381e5[39m
+2024-07-04 20:57:32 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-04 20:57:56 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-04 20:58:55 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-04 21:07:28 [[32minfo[39m]: [32mIntento de inicio de sesión con usuario: undefined[39m
+2024-07-04 21:07:29 [[32minfo[39m]: [32mUsuario con nombre de usuario undefined no encontrado[39m
+2024-07-04 21:19:47 [[32minfo[39m]: [32mIntento de inicio de sesión con usuario: jose[39m
+2024-07-04 21:19:47 [[32minfo[39m]: [32mSe ha iniciado sesión con el usuario: jose[39m
+2024-07-04 22:30:44 [[31merror[39m]: undefined
+2024-07-04 22:33:09 [[31merror[39m]: undefined
+2024-07-04 22:34:12 [[32minfo[39m]: [32mLista de clientes Obtenida[39m
+2024-07-04 23:01:37 [[32minfo[39m]: [32mNo hay clientes registrados[39m
+2024-07-04 23:01:37 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'getAllClients')[39m
+2024-07-04 23:02:02 [[32minfo[39m]: [32mNo hay clientes registrados[39m
+2024-07-04 23:02:02 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'getAllClients')[39m
+2024-07-04 23:04:55 [[32minfo[39m]: [32mNo hay clientes registrados[39m
+2024-07-04 23:04:55 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'getAllClients')[39m
+2024-07-04 23:05:55 [[32minfo[39m]: [32mNo hay clientes registrados[39m
+2024-07-04 23:05:55 [[32minfo[39m]: [32mHubo un error al obtener la lista de usuarios:TypeError: Cannot read properties of undefined (reading 'getAllClients')[39m
+2024-07-04 23:06:56 [[32minfo[39m]: [32mNo hay clientes registrados[39m
+2024-07-04 23:06:56 [[32minfo[39m]: [32mHubo un error al obtener la lista de Clientes:ReferenceError: getAllClients is not defined[39m
