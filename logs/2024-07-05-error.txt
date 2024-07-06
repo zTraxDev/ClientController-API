@@ -1,0 +1,14 @@
+2024-07-05 15:33:01 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 15:33:01 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username.[39m
+2024-07-05 16:09:44 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:09:44 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 16:09:54 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:09:54 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 16:20:37 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:20:37 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 21:52:57 [[31merror[39m]: [31mError al crear un cliente ReferenceError: format is not defined[39m
+2024-07-05 22:06:05 [[31merror[39m]: [31mError al crear un cliente ValidationError: date_pay: Cast to date failed for value "2024/07/Sa - 00:00" (type string) at path "date_pay", last_pay: Cast to date failed for value "2024/07/Sa - 00:00" (type string) at path "last_pay"[39m
+2024-07-05 22:09:48 [[31merror[39m]: [31mError al crear un cliente TypeError: moment(...).format(...).toDate is not a function[39m
+2024-07-05 22:21:07 [[31merror[39m]: [31mError al crear un cliente ReferenceError: formattedClient is not defined[39m
+2024-07-05 22:29:35 [[31merror[39m]: [31mError al crear un cliente ReferenceError: client is not defined[39m
+2024-07-05 22:30:54 [[31merror[39m]: [31mError al crear un cliente TypeError: client.toObject is not a function[39m

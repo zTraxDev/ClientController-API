@@ -1,5 +1,5 @@
 import { validationResult, check } from "express-validator";
-import { validatorResults } from "../handlers/validationHandler.js";
+import { validatorResults } from "../../handlers/validationHandler.js";
 
 const userValidator = [
     check('username').isString().notEmpty().isLength({ max: 32}),

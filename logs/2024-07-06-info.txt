@@ -1,0 +1,20 @@
+2024-07-06 00:19:50 [[31merror[39m]: [31mError al crear un cliente: ReferenceError: User is not defined[39m
+2024-07-06 00:22:28 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-06 00:22:35 [[32minfo[39m]: [32mUsuario con nombre de usuario 6687e50e52cd87f356c86811 no encontrado[39m
+2024-07-06 00:23:08 [[32minfo[39m]: [32mUsuario con nombre de usuario 6687e50e52cd87f356c86811 no encontrado[39m
+2024-07-06 00:25:48 [[32minfo[39m]: [32mUsuario con nombre de usuario 6687e50e52cd87f356c86811 no encontrado[39m
+2024-07-06 00:27:41 [[32minfo[39m]: [32mUsuario con nombre de usuario 6686ef550f6b3b84e12381e5 no encontrado[39m
+2024-07-06 00:28:53 [[32minfo[39m]: [32mUsuario con id 6686ef550f6b3b84e12381e5 obtenido[39m
+2024-07-06 00:28:59 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernard" (type string) at path "_id" for model "User"[39m
+2024-07-06 00:29:04 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "Bernard" (type string) at path "_id" for model "User"[39m
+2024-07-06 00:29:44 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-06 00:46:42 [[32minfo[39m]: [32mCliente Encontrado: [OWNER] Bernard | [CLIENT_ID] 66884fb854b613beb1d20cb5[39m
+2024-07-06 01:27:10 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-06 01:28:14 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6686ef550f6b3b84e12381e5[39m
+2024-07-06 01:28:44 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6686ef550f6b3b84e12381e5[39m
+2024-07-06 01:29:02 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-06 01:29:15 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6687e50e52cd87f356c86811[39m
+2024-07-06 01:29:29 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6687e50e52cd87f356c86811[39m
+2024-07-06 01:52:22 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6687e50e52cd87f356c86811[39m
+2024-07-06 01:52:34 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6687e50e52cd87f356c86811[39m
+2024-07-06 01:52:45 [[32minfo[39m]: [32mUsuario Actualizado: ID | 6687e50e52cd87f356c86811[39m

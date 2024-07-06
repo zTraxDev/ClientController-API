@@ -3,6 +3,7 @@ import { Schema, model } from "mongoose"
 const userSchema = new Schema({
     username: {
         type: String,
+        unique: true,
     },
     password: {
         type: String,
@@ -16,7 +17,11 @@ const userSchema = new Schema({
         type: String,
         enum: ['manager', 'admin', 'Ninguno'],
         default: 'Ninguno'
-    }
+    },
+    clients: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Client'
+    }]
 },{ timestamps: true})
 
 userSchema.methods.toJSON = function() {

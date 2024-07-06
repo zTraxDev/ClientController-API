@@ -5,6 +5,7 @@ import { matchedData } from "express-validator";
 import { HttpCode } from "../helpers/HttpHelper.js";
 import { verifyEmail } from "../helpers/VerifyEmail.js";
 import { hashPassword, comparePassword } from "../helpers/crypt.js";
+import passport from "passport";
 import bcrypt from "bcrypt"
 
 /**
@@ -19,9 +20,8 @@ class UserServices {
      */
     async getAllUser(req, res) {
         try {
-            const users = await User.find()
+            const users = await User.find().populate('clients')
 
-            console.log(req.user)
             if(!users) return res.json({succes: true,  message: "Lista de usuarios vacia", status_code: HttpCode.OK}).status(HttpCode.OK)
 
             return res.json({ data: users })
@@ -29,7 +29,11 @@ class UserServices {
 
         } catch (e) {
             logger.info("Hubo un error al obtener la lista de usuarios:" + e)
-            return res.json({ error: e, status_code: HttpCode.INTERNAL_SERVER_ERROR })
+            return res.json({
+                succes: false,
+                message: "Error del servidor",
+                status_code: HttpCode.INTERNAL_SERVER_ERROR
+            })
         }
     }
 
@@ -46,6 +50,7 @@ class UserServices {
 
             if(!mongoose.Types.ObjectId.isValid(id))
                 return res.status(HttpCode.BAD_REQUEST).json({
+                    succes: false,
                     error: "El ID proporcionado no es válido.",
                     status_code: HttpCode.BAD_REQUEST
                 });
@@ -54,13 +59,20 @@ class UserServices {
             
             logger.info(`Usuario con id ${id} obtenido`)
             return res.json({
+                succes: true,
                 data: {
                     user: finduser
-                }
+                },
+                message: "Usuario encontrado con exito",
+                status_code: HttpCode.OK
             })
         } catch (e) {
             logger.info("Hubo un error al intentar encontrar un usuario por su Id" + e)
-            return res.json({ error: e, status_code: HttpCode.INTERNAL_SERVER_ERROR })
+            return res.json({
+                succes: false,
+                message: "Error del servidor",
+                status_code: HttpCode.INTERNAL_SERVER_ERROR
+            })
         }
     }
 
@@ -78,14 +90,22 @@ class UserServices {
 
             if (!finduser) {
                 logger.info(`Usuario con nombre de usuario ${username} no encontrado`);
-                return res.status(HttpCode.NOT_FOUND).json({ error: 'Usuario no encontrado' });
+                return res.status(HttpCode.NOT_FOUND).json({
+                    succes: false,
+                    message: "Usuario no encontrado",
+                    status_code: HttpCode.NOT_FOUND
+                });
             }
 
             logger.info(`Se buscaron datos del usuario: [Nombre] | ${finduser.username} | [ID] | ${finduser._id}`);
             return res.status(HttpCode.OK).json({ data: {id: finduser._id, user: finduser } });
         } catch (e) {
             logger.error(`Hubo un error al buscar el usuario: ${e.message}`);
-            return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({ error: e.message });
+            return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({ 
+                succes: false,
+                message: "Error del servidor",
+                status_code: HttpCode.INTERNAL_SERVER_ERROR
+            });
         }
     }
 
@@ -95,7 +115,7 @@ class UserServices {
      * @param {res} res 
      */
 
-    async createUser(req, res) {
+    async registerUser(req, res) {
         try {
             const { username, password, email } = matchedData(req)
 
@@ -104,6 +124,7 @@ class UserServices {
 
             if(emailVerify){
                 return res.json({
+                    succes: false,
                     data: {
                         message: "El correo ya esta registrado"
                     },
@@ -120,10 +141,11 @@ class UserServices {
             await data.save()
             logger.info(`Se ah creado una cuenta: ID | ${data._id}`)
             return res.json({
+                sussces: true,
                 data: {
                     user: data,
-                    message: "Se ha creado el usuario correctamente!",
                 },
+                message: "Se ha creado el usuario correctamente!",
                 status_code: HttpCode.CREATED,
             })
 
@@ -139,46 +161,35 @@ class UserServices {
      * @param {res} res 
      */
 
-    async logginUser(req, res) {
-        try {
-            const { username, password } = matchedData(req); // Asegúrate de que 'username' y 'password' sean los campos correctos
-
-            logger.info(`Intento de inicio de sesión con usuario: ${username}`);
-
-            const findInfoUser = await User.findOne({ username });
-
-            if (!findInfoUser) {
-                logger.info(`Usuario con nombre de usuario ${username} no encontrado`);
-                return res.status(HttpCode.NOT_FOUND).json({
-                    error: 'Usuario o contraseña incorrectos',
-                    status_code: HttpCode.NOT_FOUND
-                });
+    async logginUser(req, res, next) {
+        passport.authenticate('local', (err, user, info) => {
+            if (err) {
+                logger.error(`Error en la autenticación: ${err.message}`);
+                return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({ error: err.message });
             }
-
-            const comparePass = await bcrypt.compare(password, findInfoUser.password);
-
-            if (!comparePass) {
-                return res.status(HttpCode.BAD_REQUEST).json({
-                    error: 'Usuario o contraseña incorrectos',
-                    status_code: HttpCode.BAD_REQUEST
-                });
+    
+            if (!user) {
+                logger.error(`Usuario no encontrado o contraseña incorrecta: ${info.message}`);
+                return res.status(HttpCode.UNAUTHORIZED).json({ error: info.message });
             }
+    
+            req.login(user, (err) => {
+                if (err) {
+                    logger.error(`Error al iniciar sesión: ${err.message}`);
+                    return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({ error: err.message });
+                }
+    
+                logger.info(`Se ha iniciado sesión: ID | ${user.id} | NAME | ${user.username}`)
 
-            logger.info(`Se ha iniciado sesión con el usuario: ${findInfoUser.username}`);
-            return res.status(HttpCode.OK).json({
-                succes: true,
-                data: {
-                    user: findInfoUser
-                },
-                status_code: HttpCode.OK
+                res.status(HttpCode.OK).json({
+                    success: true,
+                    data: { user },
+                    redirectUrl: "/dashboard",
+                    message: "Inicio de sesión exitoso",
+                    status_code: HttpCode.OK
+                });
             });
-        } catch (e) {
-            logger.error(`Hubo un error al intentar iniciar sesión: ${e.message}`);
-            return res.status(HttpCode.INTERNAL_SERVER_ERROR).json({
-                error: e.message,
-                status_code: HttpCode.INTERNAL_SERVER_ERROR
-            });
-        }
+        })(req, res, next);
     }
 
     /**
@@ -187,6 +198,43 @@ class UserServices {
      * @param {res} res 
      */
 
+    async updateUserById(req,res){
+        try {
+            const { id } = req.params
+            const { username, password, email, role} = matchedData(req)
+
+            console.log(password)
+            const emailVerify = await verifyEmail(email)
+            const hashedPassword = await hashPassword(password)
+
+            if(emailVerify){
+                return res.json({
+                    succes: false,
+                    data: {
+                        message: "El correo ya esta registrado"
+                    },
+                    status_code: HttpCode.BAD_REQUEST
+                })
+            }
+
+            let updateFields = { username, password, email, role }
+
+            if(password){
+                updateFields.password =  hashedPassword
+            }
+            const updatedUser = await User.findOneAndUpdate(
+                { _id: id},
+                { $set: updateFields },
+                { new: true }
+            )
+
+            logger.info(`Usuario Actualizado: ID | ${id}`)
+            return res.json({ succes: true, data: { updatedUser }, message: "Usuario actualizado correctamente", status_code: HttpCode.OK})
+            .status(HttpCode.OK)
+        } catch (error) {
+            console.log(error)
+        }
+    }
     async deleteUserById(req, res) {
             try {
                 const { id } = req.params;
@@ -226,6 +274,25 @@ class UserServices {
     
 
     }
+
+    async asignRoleForUser(req, res){
+        try {
+            const { id } = req.params
+            const { role } = req.body
+            const findUser = await User.findById(id)
+
+            if(!findUser) return res.status(HttpCode.NOT_FOUND).json({ message: "Usuario no encontrado" })
+                
+            findUser.role = role
+
+            await findUser.save()
+            logger.info(`Se asigno el rol ${role} al usuario con id ${id}`)
+            return res.status(HttpCode.OK).json({ data: { success: true, message: "Se ha asignado el rol correctamente" }, status_code: HttpCode.OK })
+        }catch(error){
+            console.log(error)
+        }
+    }
+
 }
 
 const UserController = new UserServices()

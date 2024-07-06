@@ -1,0 +1,71 @@
+2024-07-05 14:19:43 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-05 14:20:23 [[32minfo[39m]: [32mUsuario con nombre de usuario create no encontrado[39m
+2024-07-05 14:20:30 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 6687e50e52cd87f356c86811[39m
+2024-07-05 14:20:53 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-05 14:29:02 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-05 14:30:03 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "login" (type string) at path "_id" for model "User"[39m
+2024-07-05 14:30:54 [[32minfo[39m]: [32mHubo un error al intentar encontrar un usuario por su IdCastError: Cast to ObjectId failed for value "login" (type string) at path "_id" for model "User"[39m
+2024-07-05 14:32:18 [[32minfo[39m]: [32mUsuario con nombre de usuario login no encontrado[39m
+2024-07-05 14:34:27 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 14:35:23 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 14:45:00 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 15:04:32 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 15:04:33 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 15:04:34 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 15:04:34 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 15:33:01 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 15:33:01 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username.[39m
+2024-07-05 16:09:44 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:09:44 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 16:09:54 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:09:54 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 16:20:37 [[31merror[39m]: [31mUsuario no encontrado: a[39m
+2024-07-05 16:20:37 [[31merror[39m]: [31mUsuario no encontrado o contraseña incorrecta: Incorrect username or password.[39m
+2024-07-05 16:20:50 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 16:26:02 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 16:27:26 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 16:44:29 [[32minfo[39m]: [32mSe asigno el rol admin al usuario con id 6686ef550f6b3b84e12381e5[39m
+2024-07-05 16:48:55 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 16:49:51 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:00:23 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:02:26 [[32minfo[39m]: [32mSe asigno el rol admin al usuario con id 6687e50e52cd87f356c86811[39m
+2024-07-05 17:02:50 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:04:35 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:10:35 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:11:02 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-05 17:20:59 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-05 17:24:31 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-05 17:28:23 [[32minfo[39m]: [32mSe ah creado una cuenta: ID | 668811179b3c545817e83627[39m
+2024-07-05 17:28:41 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:30:32 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:36:44 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:36:49 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:36:51 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:36:52 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:34 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:37 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:45 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:47 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:48 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:49 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:49 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:40:50 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:41:52 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 17:42:21 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:16:58 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:17:02 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:17:11 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:17:13 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:17:15 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:17:17 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:44:44 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 18:46:16 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m
+2024-07-05 21:52:57 [[31merror[39m]: [31mError al crear un cliente ReferenceError: format is not defined[39m
+2024-07-05 22:06:05 [[31merror[39m]: [31mError al crear un cliente ValidationError: date_pay: Cast to date failed for value "2024/07/Sa - 00:00" (type string) at path "date_pay", last_pay: Cast to date failed for value "2024/07/Sa - 00:00" (type string) at path "last_pay"[39m
+2024-07-05 22:09:48 [[31merror[39m]: [31mError al crear un cliente TypeError: moment(...).format(...).toDate is not a function[39m
+2024-07-05 22:21:07 [[31merror[39m]: [31mError al crear un cliente ReferenceError: formattedClient is not defined[39m
+2024-07-05 22:23:29 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-05 22:29:35 [[31merror[39m]: [31mError al crear un cliente ReferenceError: client is not defined[39m
+2024-07-05 22:30:54 [[31merror[39m]: [31mError al crear un cliente TypeError: client.toObject is not a function[39m
+2024-07-05 22:52:45 [[32minfo[39m]: [32mSe buscaron datos del usuario: [Nombre] | Bernard | [ID] | 6687e50e52cd87f356c86811[39m
+2024-07-05 22:53:38 [[32minfo[39m]: [32mSe ha iniciado sesión: ID | 6687e50e52cd87f356c86811 | NAME | Bernard[39m

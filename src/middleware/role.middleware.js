@@ -1,27 +1,25 @@
-import { HttpCode } from "../helpers/HttpHelper.js"
+// Ejemplo simplificado del middleware checkRoles
+import { HttpCode } from "../helpers/HttpHelper.js";
 
 const checkRoles = (roles = []) => {
-    try {
-        return (req, res, next) => {
-            const userRole = req.user.role;
-    
-            // Verificar si el rol del usuario incluye alguno de los roles permitidos
-            if (!userRole || !roles.some(role => userRole.includes(role))) {
-                return res.status(HttpCode.UNAUTHORIZED).json({
-                    success: false,
-                    message: "No autorizado para acceder a esta función.",
-                    status_code: HttpCode.UNAUTHORIZED
-                });
-            }
-    
-            // Continuar con la siguiente función de middleware
-            next();
-        };
-    } catch (error) {
-        console.log(error)
-    }
-}
+    return (req, res, next) => {
+        // Verificar si el usuario está autenticado
+        console.log('Usuario autenticado:', req.isAuthenticated());
 
+        if (!req.isAuthenticated()) {
+            return res.status(HttpCode.UNAUTHORIZED).json({ success: false, message: 'Not authenticated.', redirectUrl: "/login" });
+        }
 
+        // Verificar si el usuario tiene uno de los roles necesarios
+        console.log('Rol del usuario:', req.user.role);
+        if (!roles.includes(req.user.role)) {
+            return res.status(HttpCode.UNAUTHORIZED).json({ success: false, message: 'Not authorized.' });
+        }
 
-export { checkRoles }
+        // Si pasa la validación, continuar con la siguiente función middleware
+        next();
+    };
+};
+
+export { checkRoles };
+

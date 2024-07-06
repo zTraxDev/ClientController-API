@@ -1,22 +1,31 @@
 import { Router } from "express"
 import { UserController } from "../controllers/user.controller.js"
-import { userValidator } from "../validators/userValidator.js"
-import { loginValidator } from "../validators/login.validator.js"
+import { userValidator } from "../validators/user/userValidator.js"
+import { loginValidator } from "../validators/user/login.validator.js"
+import { updateUserValidator } from "../validators/user/updateUser.validator.js"
 import { checkRoles } from "../middleware/role.middleware.js"
+import { limiter } from "../middleware/requestLimiter.middleware.js"
 
 const userRouter = Router()
 
-// Gets
-userRouter.get("/", UserController.getAllUser)
-userRouter.get("/:username", UserController.getUserByUsername)
-userRouter.get("/:id", UserController.getUserById)
 
-// Posts and Patch
-userRouter.post("/create", userValidator, UserController.createUser)
-userRouter.post("/login", loginValidator, UserController.logginUser)
+/**
+ * Middlewares
+ */
+
+// userRouter.use(limiter)
+
+userRouter.post("/login", loginValidator, UserController.logginUser);
+userRouter.post("/create", checkRoles(['manager', 'admin']), userValidator, UserController.registerUser);
+userRouter.patch("/edit/:id", checkRoles(['manager','admin']), updateUserValidator, UserController.updateUserById)
+
+userRouter.get("/:id", checkRoles(['manager', 'admin']), UserController.getUserById);
+userRouter.get("/username/:username", checkRoles(['manager', 'admin']),UserController.getUserByUsername);
 
 
-// Delte
-userRouter.delete("/:id", UserController.deleteUserById)
+userRouter.get("/", checkRoles(['manager', 'admin']), UserController.getAllUser);
 
-export { userRouter }
+
+userRouter.delete("/:id", checkRoles(['manager', 'admin']), UserController.deleteUserById);
+
+export { userRouter };

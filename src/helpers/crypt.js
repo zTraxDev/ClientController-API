@@ -3,6 +3,10 @@ import bcrypt from "bcrypt";
 const saltRounds = 10;
 
 const hashPassword = async (password) => {
+    if (!password || typeof password !== 'string') {
+        throw new Error('Password must be a non-empty string');
+    }
+
     try {
         const hashed = await bcrypt.hash(password, saltRounds);
         return hashed;
