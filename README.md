@@ -1,26 +1,26 @@
-# API para Gestión de Clientes
+# 📊 API para Gestión de Clientes
 
 Esta API permite gestionar clientes, incluyendo creación, lectura, actualización y eliminación de registros. Además, incluye autenticación y autorización para asegurar que solo usuarios autorizados puedan acceder a ciertas rutas.
 
-## Tabla de Contenidos
-- [Características](#características)
-- [Tecnologías](#tecnologías)
-- [Instalación](#instalación)
-- [Configuración](#configuración)
-- [Ejecución](#ejecución)
-- [Endpoints](#endpoints)
-- [Autenticación](#autenticación)
-- [Autorización](#autorización)
-- [Contribuciones](#contribuciones)
+## 🗂️ Tabla de Contenidos
+- [🎨 Características](#-características)
+- [💻 Tecnologías](#-tecnologías)
+- [🚀 Instalación](#-instalación)
+- [⚙️ Configuración](#-configuración)
+- [🏃 Ejecución](#-ejecución)
+- [🔌 Endpoints](#-endpoints)
+- [🔒 Autenticación](#-autenticación)
+- [🔑 Autorización](#-autorización)
+- [🤝 Contribuciones](#-contribuciones)
 
-## Características
-- CRUD de Clientes
-- Autenticación y autorización de usuarios
-- Manejo de sesiones con cookies
-- Validación de datos
-- Manejo de errores
+## 🎨 Características
+- 🔄 CRUD de Clientes
+- 🔐 Autenticación y autorización de usuarios
+- 🍪 Manejo de sesiones con cookies
+- ✅ Validación de datos
+- 🚫 Manejo de errores
 
-## Tecnologías
+## 💻 Tecnologías
 - Node.js
 - Express.js
 - MongoDB
@@ -30,7 +30,7 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
 - Moment.js
 - Joi
 
-## Instalación
+## 🚀 Instalación
 
 1. Clona el repositorio
     ```sh
@@ -43,7 +43,7 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
     npm install
     ```
 
-## Configuración
+## ⚙️ Configuración
 
 Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variables de entorno:
 
