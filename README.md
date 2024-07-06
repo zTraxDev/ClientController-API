@@ -40,6 +40,7 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
     npm install
     ```
 
+
 ## 🏃 Ejecucíon
 ```
 // Para produccion
@@ -49,6 +50,7 @@ npm run start
 // Para modo desarrollo
 npm run dev
 ```
+
 ## ⚙️ Configuración
 
 Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variables de entorno:
@@ -58,6 +60,7 @@ PORT=3000
 MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
 SECRET_KEY=tu-clave-secreta
 ```
+
 
 ## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, sigue estos pasos:
