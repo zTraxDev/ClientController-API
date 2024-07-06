@@ -41,7 +41,7 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
     ```
 
 
-## 🏃 Ejecucíon
+## 🏃 Ejecución
 ```
 // Para produccion
 npm run start
