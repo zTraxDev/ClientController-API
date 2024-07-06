@@ -56,7 +56,7 @@ SECRET_KEY=tu-clave-secreta
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, sigue estos pasos:
 
 Haz un fork del proyecto.
-Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
-Realiza tus cambios y haz commit (git commit -am 'Añade nueva característica').
-Envía los cambios a tu rama (git push origin feature/nueva-caracteristica).
-Abre un Pull Request.
+- Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+- Realiza tus cambios y haz commit (git commit -am 'Añade nueva característica').
+- Envía los cambios a tu rama (git push origin feature/nueva-caracteristica).
+- Abre un Pull Request.
