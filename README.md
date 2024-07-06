@@ -51,3 +51,12 @@ Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variable
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
 SECRET_KEY=tu-clave-secreta
+
+## 🤝 Contribuciones
+¡Las contribuciones son bienvenidas! Si deseas contribuir, sigue estos pasos:
+
+Haz un fork del proyecto.
+Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+Realiza tus cambios y haz commit (git commit -am 'Añade nueva característica').
+Envía los cambios a tu rama (git push origin feature/nueva-caracteristica).
+Abre un Pull Request.
