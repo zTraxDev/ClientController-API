@@ -8,7 +8,6 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
 - [🚀 Instalación](#-instalación)
 - [⚙️ Configuración](#-configuración)
 - [🏃 Ejecución](#-ejecución)
-- [🔌 Endpoints](#-endpoints)
 - [🔒 Autenticación](#-autenticación)
 - [🔑 Autorización](#-autorización)
 - [🤝 Contribuciones](#-contribuciones)
@@ -51,6 +50,7 @@ Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variable
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/tu-base-de-datos
 SECRET_KEY=tu-clave-secreta
+```
 
 ## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas contribuir, sigue estos pasos:
