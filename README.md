@@ -40,6 +40,15 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
     npm install
     ```
 
+## 🏃 Ejecucíon
+```
+// Para produccion
+npm run start
+```
+```
+// Para modo desarrollo
+npm run dev
+```
 ## ⚙️ Configuración
 
 Crea un archivo `.env` en la raíz del proyecto y agrega las siguientes variables de entorno:
