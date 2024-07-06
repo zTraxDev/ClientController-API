@@ -8,8 +8,6 @@ Esta API permite gestionar clientes, incluyendo creación, lectura, actualizaci�
 - [🚀 Instalación](#-instalación)
 - [⚙️ Configuración](#-configuración)
 - [🏃 Ejecución](#-ejecución)
-- [🔒 Autenticación](#-autenticación)
-- [🔑 Autorización](#-autorización)
 - [🤝 Contribuciones](#-contribuciones)
 
 ## 🎨 Características
